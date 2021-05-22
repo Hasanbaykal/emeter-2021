@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, ImageBackground } from 'react-native';
 
 export default class App extends React.Component {
   state={
@@ -25,7 +25,7 @@ export default class App extends React.Component {
         <View style={styles.inputView} >
           <TextInput  
             secureTextEntry
-            style={styles.inputText}
+            style={styles.inputPass}
             placeholder="Wachtwoord..." 
             placeholderTextColor="#ffffff"
             onChangeText={text => this.setState({password:text})}/>
@@ -33,13 +33,14 @@ export default class App extends React.Component {
         <TouchableOpacity>
           <Text style={styles.forgot}>Wachtwoord vergeten?</Text>
         </TouchableOpacity>
+        <ImageBackground  style= { styles.backgroundImage } source={require('./assets/images/emojis.png')}>
         <TouchableOpacity style={styles.loginBtn}>
           <Text style={styles.loginText}>Log In</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.signupBtn}>
           <Text style={styles.signupText}>Aanmelden</Text>
         </TouchableOpacity>
-
+        </ImageBackground>
   
       </View>
     );
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logo:{
+    marginTop: 20,
     marginBottom:40
   },
   inputView:{
@@ -67,27 +69,37 @@ const styles = StyleSheet.create({
   },
   inputText:{
     height:50,
-    color:"white"
+    color:"white",
+    fontFamily: "KoHo-Bold",
+    fontSize: 15
+  },
+  inputPass:{
+    height:50,
+    color:"white",
+    fontFamily: "KoHo-Bold",
+    fontSize: 15
   },
   forgot:{
     color:"black",
-    fontSize:13
+    fontSize:15,
+    fontFamily: "KoHo-Bold",
   },
   loginBtn:{
-    width:"80%",
+    width:"40%",
     backgroundColor:"#8eca3e",
     borderRadius:25,
     height:50,
     alignItems:"center",
     justifyContent:"center",
     marginTop:20,
-    marginBottom:10
   },
   loginText:{
-    color:"white"
+    color:"white",
+    fontFamily: "KoHo-Bold",
+    fontSize: 15
   },
   signupBtn:{
-    width:"60%",
+    width:"40%",
     backgroundColor:"#db514b",
     borderRadius:25,
     height:50,
@@ -96,6 +108,16 @@ const styles = StyleSheet.create({
     marginTop:20
   },
   signupText:{
-    color:"white"
+    color:"white",
+    fontFamily: "KoHo-Bold",
+    fontSize: 15
+  },
+  backgroundImage:{
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    justifyContent: "center",
+    alignItems: "center",
+    opacity: 1
   }
 });
