@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     backgroundColor:"#f0cb1e",
     borderRadius:25,
     height:50,
-    marginBottom:20,
+    marginBottom:15,
     justifyContent:"center",
     padding:20
   },
@@ -82,7 +82,8 @@ const styles = StyleSheet.create({
   forgot:{
     color:"black",
     fontSize:15,
-    fontFamily: "KoHo-Bold",
+    fontFamily: "KoHo-Light",
+    marginBottom: 10
   },
   loginBtn:{
     width:"40%",
