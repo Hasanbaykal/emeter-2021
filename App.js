@@ -19,25 +19,25 @@ export default class App extends React.Component {
           <TextInput  
             style={styles.inputText}
             placeholder="Email..." 
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#ffffff"
             onChangeText={text => this.setState({email:text})}/>
         </View>
         <View style={styles.inputView} >
           <TextInput  
             secureTextEntry
             style={styles.inputText}
-            placeholder="Password..." 
-            placeholderTextColor="#003f5c"
+            placeholder="Wachtwoord..." 
+            placeholderTextColor="#ffffff"
             onChangeText={text => this.setState({password:text})}/>
         </View>
         <TouchableOpacity>
-          <Text style={styles.forgot}>Forgot Password?</Text>
+          <Text style={styles.forgot}>Wachtwoord vergeten?</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.loginBtn}>
-          <Text style={styles.loginText}>LOGIN</Text>
+          <Text style={styles.loginText}>Log In</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.loginText}>Signup</Text>
+        <TouchableOpacity style={styles.signupBtn}>
+          <Text style={styles.signupText}>Aanmelden</Text>
         </TouchableOpacity>
 
   
@@ -49,19 +49,16 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#003f5c',
+    backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   logo:{
-    fontWeight:"bold",
-    fontSize:50,
-    color:"#fb5b5a",
     marginBottom:40
   },
   inputView:{
     width:"80%",
-    backgroundColor:"#465881",
+    backgroundColor:"#f0cb1e",
     borderRadius:25,
     height:50,
     marginBottom:20,
@@ -73,20 +70,32 @@ const styles = StyleSheet.create({
     color:"white"
   },
   forgot:{
-    color:"white",
-    fontSize:11
+    color:"black",
+    fontSize:13
   },
   loginBtn:{
     width:"80%",
-    backgroundColor:"#fb5b5a",
+    backgroundColor:"#8eca3e",
     borderRadius:25,
     height:50,
     alignItems:"center",
     justifyContent:"center",
-    marginTop:40,
+    marginTop:20,
     marginBottom:10
   },
   loginText:{
+    color:"white"
+  },
+  signupBtn:{
+    width:"60%",
+    backgroundColor:"#db514b",
+    borderRadius:25,
+    height:50,
+    alignItems:"center",
+    justifyContent:"center",
+    marginTop:20
+  },
+  signupText:{
     color:"white"
   }
 });
