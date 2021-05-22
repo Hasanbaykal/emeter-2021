@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, } from 'react-native';
 
 export default class App extends React.Component {
   state={
@@ -9,7 +9,12 @@ export default class App extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text style={styles.logo}>HeyAPP</Text>
+        <View style={styles.logo}>
+        <Image 
+          style={{width: 350, height: 250}}
+          source={require('./assets/images/logo-emeter.png')}
+          />
+          </View>
         <View style={styles.inputView} >
           <TextInput  
             style={styles.inputText}
