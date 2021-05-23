@@ -1,5 +1,10 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, ImageBackground } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+
+
+
 
 export default class App extends React.Component {
   state={
@@ -8,6 +13,7 @@ export default class App extends React.Component {
   }
   render(){
     return (
+      <NavigationContainer>
       <View style={styles.container}>
         <View style={styles.logo}>
         <Image 
@@ -35,7 +41,7 @@ export default class App extends React.Component {
         </TouchableOpacity>
         <ImageBackground  style= { styles.backgroundImage } source={require('./assets/images/emojis.png')}>
         <TouchableOpacity style={styles.loginBtn}>
-          <Text style={styles.loginText}>Log In</Text>
+          <Text style={styles.loginText}>Inloggen</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.signupBtn}>
           <Text style={styles.signupText}>Aanmelden</Text>
@@ -43,6 +49,7 @@ export default class App extends React.Component {
         </ImageBackground>
   
       </View>
+      </NavigationContainer>
     );
   }
 }
