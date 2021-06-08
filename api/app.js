@@ -6,11 +6,11 @@ require('dotenv/config');
 
 
 // import routes
-const postsRoute = require('./routes/posts');
+const profileRoute = require('./routes/profiles');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use('/posts', postsRoute)
+app.use('/profile', profileRoute)
 
 
 // atlas db
