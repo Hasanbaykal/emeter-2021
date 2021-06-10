@@ -1,4 +1,4 @@
-const Profile = require('../models/Log');
+const Profile = require('../models/Profile');
 
 function profileValid(req) {
     let errors = {};
