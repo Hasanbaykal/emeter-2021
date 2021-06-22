@@ -42,8 +42,8 @@ class AddWeek extends Component {
         <View style={{alignSelf: 'flex-start'}}>
           <ArrowButton icon="arrow-back-outline" />
         </View>
-        <Text style={styles.heading}>Vrijdarg 19 maart</Text>
-        <Text style={styles.subHeading}>dummyText</Text>
+        <Text style={styles.heading}>Vrijdag 19 maart</Text>
+        <Text style={styles.subHeading}>...</Text>
 
         <View style={styles.innerContainer}>
           <View style={Styles.gapCreator}></View>

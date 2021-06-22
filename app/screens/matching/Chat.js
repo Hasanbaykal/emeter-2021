@@ -40,7 +40,7 @@ class Chat extends Component {
     return (
       <SafeAreaView style={Styles.container}>
         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-          <Text style={styles.heading}>Nog geen match (no match yet)</Text>
+          <Text style={styles.heading}>Nog geen match</Text>
         </View>
       </SafeAreaView>
     );

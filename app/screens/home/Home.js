@@ -43,7 +43,7 @@ class Home extends Component {
     };
     return (
       <SafeAreaView style={Styles.container}>
-        <Text style={styles.heading}>Vrijdarg 19 maart</Text>
+        <Text style={styles.heading}>Vrijdag 19 maart</Text>
         <Text style={styles.subHeading}>Selecteer dag:</Text>
         <Calendar
           markingType={'multi-dot'}

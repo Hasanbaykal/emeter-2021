@@ -40,7 +40,7 @@ class Week extends Component {
       <SafeAreaView style={Styles.container}>
         <View style={styles.innerContainer}>
           <View style={Styles.lessGapCreator}></View>
-          <Text style={styles.heading}>deze week</Text>
+          <Text style={styles.heading}>Deze week</Text>
           <SingleEmoji title="ma 15" count="0" emoji={images.angry} />
           <SingleEmoji title="di 16 " count="5" emoji={images.mad} />
           <SingleEmoji title="woe 17" count="8" emoji={images.smilingFace} />
